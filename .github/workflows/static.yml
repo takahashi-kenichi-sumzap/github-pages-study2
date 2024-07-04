@@ -37,8 +37,6 @@ jobs:
             published
 
       # Runs a single command using the runners shell
-      - name: ファイル一覧
-        run: ls -la
       - name: Install tree
         run: sudo apt-get install -y tree
       - name: Display tree

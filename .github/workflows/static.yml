@@ -32,7 +32,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          #特定のディレクトリだチェックアウト
+          #特定のディレクトリだチェックアウト?
           sparse-checkout: |
             published
       - name: Setup Pages

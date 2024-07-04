@@ -34,22 +34,22 @@ jobs:
         run: |
           echo 複数行はこう書く。
           echo 複数行はこう書く。　その2。
-build2:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo 2 一行の何かを実行する。
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo 2 複数行はこう書く。
-          echo 2 複数行はこう書く。　その2。
+  build2:
+      # The type of runner that the job will run on
+      runs-on: ubuntu-latest
+  
+      # Steps represent a sequence of tasks that will be executed as part of the job
+      steps:
+        # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+        - uses: actions/checkout@v3
+  
+        # Runs a single command using the runners shell
+        - name: Run a one-line script
+          run: echo 2 一行の何かを実行する。
+  
+        # Runs a set of commands using the runners shell
+        - name: Run a multi-line script
+          run: |
+            echo 2 複数行はこう書く。
+            echo 2 複数行はこう書く。　その2。
           

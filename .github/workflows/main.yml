@@ -25,6 +25,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
         with:
+          #特定のディレクトリだチェックアウト
           sparse-checkout: |
             publish1/publish
             
